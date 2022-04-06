@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script defer src="build/bundle.js"></script>
+    <title>Note Taker Application</title>
+  </head>
+  <body>
+    <div class="modal-container">
+      <div class="modal">
+        <button class="modal__btn">&times;</button>
+        <h2 class="modal__title">Title bere</h2>
+        <p class="modal__body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+          mollitia voluptatibus accusantium vel sequi veniam dolorem neque
+          aspernatur reiciendis, unde ducimus sed sunt dolorum blanditiis fugit
+          possimus minus, repellendus dolores aliquid?
+        </p>
+      </div>
+    </div>
+    <div class="form-container">
+      <img
+        style="height: 200px; width: 300px"
+        src="https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/w_596,c_limit,q_auto:best,f_auto/fc/3034007-inline-i-applelogo.jpg"
+        alt=""
+      />
+      <!-- <h1>Note Taker</h1> -->
+      <h3>Add a New Note:</h3>
+      <form>
+         
+        <label for="note"
+          >Note
+          <textarea
+            type="text"
+            id="note"
+            cols="30"
+            rows="10"
+            placeholder="Enter note text."
+          ></textarea>
+        </label>
+        <input type="submit" />
+      </form>
+    </div>
+    <div class="note-container"></div>
+  </body>
+</html>
