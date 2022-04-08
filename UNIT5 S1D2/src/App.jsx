@@ -1,9 +1,21 @@
 // import logo from './logo.svg';
+import e from 'express';
 import './App.css';
 
 function App() {
-  const operetingSystem = ["Android","Blackberry","Iphone","Windows Phone"];
-  const Mobile = ["Samsung","HTC","Micromax","Apple"];
+  // const operetingSystem = ["Android","Blackberry","Iphone","Windows Phone"];
+  // const Mobile = ["Samsung","HTC","Micromax","Apple"];
+  const Data = [
+    {
+      Title: "Mobile Operatiing System",
+      List:["Android","Blackberry","Iphone","Windows Phone"],
+    },
+    {
+      Title: "Mobile Manufacture",
+      List:["Samsung","HTC","Micromax","Apple"],
+    }
+  ]
+  
   const links=["Services","Projects","About"]
   return (
     <div className="App">
@@ -24,24 +36,25 @@ function App() {
         </div>
         
       </nav>
-      <h2>Operating System </h2>
-        <ul>
-          {operetingSystem.map((e)=>{
-            return <Oper oper={e}/>
-          })}
-        </ul>
-        <h2>Mobile </h2>
-        <ul>
-          {Mobile.map((e)=>{
-            return <Oper oper={e}/>
-          })}
-        </ul>
+     {Data.map((e)=>{
+     return <Shop title={e.title} list={e.list}/>
+     })}
+        
     </div>
   );
 };
 // component
-function Oper(data){
-  return <li>{data.oper}</li>
+// function Oper(data){
+//   return <li>{data.oper}</li>
+// }
+
+function Shop({Title,List}){
+  return <>
+  <h2>{Title}</h2>
+  <ul>{List.map((e)=>{
+    return <li>{e}</li>
+  })}</ul>
+  </>
 }
 function Logo(Data){
   return <h3>{Data.data}</h3>
