@@ -1,0 +1,51 @@
+body{
+    background-color: #9572ff;
+    
+}
+.main{
+    background-color: #3f3360;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    padding: 20px;
+    
+    
+}
+.todo{
+    
+    
+    
+    
+}
+.Button{
+    background-color: #d29711;
+    border-radius: 5px;
+    border: 0px;
+    height: 30px;
+}
+.Input_box{
+    background-color: #12698a;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    height: 30px;
+}
+.todolist{
+    background-color: #cb22b0;
+    color: white;
+    border: solid 1px black;
+    width: 242px;
+   margin: auto;
+   margin-top: 5px;
+   border-radius: 5px;
+   justify-content: space-between;
+   overflow: hidden;
+   
+
+
+}
+.togglebtn{
+    float: right;
+    background-color: blueviolet;
+    border-radius: 5px;
+}
