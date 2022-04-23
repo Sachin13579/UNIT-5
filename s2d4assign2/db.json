@@ -1,12 +1,12 @@
 {
     "users": [
       {
-        "name": "Sunil Kumar Biswal",
-        "address": "Devru Road, Rishikunj Colony",
-        "age": "31",
-        "salary": "2223333",
-        "married": "Yes",
-        "department": "A",
+        "name": "Sachin kuamr singh",
+        "address": "vranasi",
+        "age": "23",
+        "salary": "1 lac",
+        "married": "No",
+        "department": "IT",
         "id": 1
       }
     ]
