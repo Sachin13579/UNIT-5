@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { useEffect, useState } from "react";
+import "./emp.css"
  export const EmployeeList = () => {
   const [data , setdata] = useState ([]);
 

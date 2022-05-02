@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useContext } from "react";
 import { UserContext } from "../Contex/Usercontex";
-
+import "./emp.css"
 export const Home = () => {
 
-  const {total , handlecount} = useContext(UserContext);
+  const {total} = useContext(UserContext);
   // create statistics for user.
   // get Total user count from DB,
   // other fields are in memory values stored in context API.
@@ -28,15 +28,7 @@ export const Home = () => {
     
   },[]);
   
-  useEffect(()=>{
-    data.map((e)=>{
-      if(e.status === "terminated"){
-        handlecount("terminated")
-      }else if(e.status === "promoted"){
-        handlecount("promoted")
-      }
-    })
-  },[])
+  console.log(total)
 
   return (
     <>
